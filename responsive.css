@@ -73,10 +73,6 @@ header>div:last-child,
 
   /* Bagian Formnya Gan */
 
-  .menu {
-    margin: 20px 155px;
-  }
-
   /* Bagian Formnya Gan */
 
 }
@@ -172,26 +168,41 @@ header>div:last-child,
 
   /*  Bagian Formnya Gan */
   .promogan h2 {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .promogan h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
 
-  .promogan p {
-    font-size: 14px;
+  .kets {
+    font-size: 12.5px;
+    margin: auto 20px;
   }
 
   .menu {
-    margin: 20px 95px;
+    margin: 20px 25px;
+  }
+  
+  .choose-menu {
+    font-size: 14px;
   }
 
   .menuu {
-    width: 200px;
+    width: 85%;
   }
 
-  .menu input {
-    width: 425px;
+  .keterangan {
+    font-size: 15px;
   }
+
+  .isi {
+    width: 85%;
+  }
+
+  .menu a {
+    width: 50%;
+  }
+/* Promo Ends Here... */
+
 }
