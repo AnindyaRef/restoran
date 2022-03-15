@@ -1,51 +1,151 @@
+/* Header  */
+
 header {
-    width: 100%;
-    height: 65px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    height: 62px;
+    padding: 0px 50px 0px 50px;
+    z-index: 100;
+    color: rgb(80, 35, 20);
+    text-weight: bolder;
     background-color: rgb(243, 205, 162);
+    box-shadow: 3px 1px 10px rgba(201, 128, 115, 0.9);
+    justify-content: space-between;
+    font-family: "cooper black";
 }
 
-.logo {
-    width: 150px;
-    margin-top: 8px;
-}
-
-.container {
-    width: 1170px;
-    padding: px;
-    margin: 0 auto;
-    font-family: cooper black;
-    color: rgb(80, 35, 20);
-}
-
-
-.header-left {
+.head-container {
     float: left;
-    padding-right: 25px;
 }
 
-.header-list li {
-    float: left;
-    padding: 26px 20px;
-    list-style: none;
+.top-right>a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60px;
+    padding: 0px 30px;
+    text-align: right;
+    color: #602f2f;
+    text-decoration: none;
+    vertical-align: middle;
 }
 
-.header-right {
-    float: right;
-    background-color: rgba(255, 255, 255, 0.3);
-    transition: all 0.5s;
+.top-right>a:hover {
+    background: gray;
+    color: black;
 }
 
-.header-right:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-
+.trigger {
+    display: none;
 }
 
-.header-right a {
-    line-height: 65px;
-    padding-left: 25px;
-    padding-right: 25px;
-    color: rgb(80, 35, 20);
+.trigger.icon-mag {
+    margin-left: 0px;
+    border: 0px;
+    border-right: 1px solid gray;
+    background-color: black;
+}
+
+.menu1 {
+    margin: 10px;
+    width: 30px;
+    height: 5px;
+    border: 0px;
+    border-top: 15px double white;
+    border-bottom: 5px solid white;
+    display: none;
+}
+
+.close {
+    display: none;
+    width: 100%;
+    background: rgb(134, 10, 10);
+    padding: 10px;
+}
+
+.close>div {
+    margin: auto;
+    height: 0px;
+    width: 0px;
+    border: 10px solid transparent;
+    border-top: 0px;
+    border-bottom: 10px solid white;
+}
+
+
+/* Radio hack, (Derive from Checkbox Hack) */
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]:checked+div {
     display: block;
+}
+
+header+div {
+    margin-top: 62px;
+    padding: 5px;
+    height: 95vh;
+}
+
+/* Tombol Button */
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+.btn-border {
+    background-color: #c47135;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    font-size: 1em;
+    font-size: 12px;
+    line-height: 1em;
+    margin: 15px 40px;
+    outline: none;
+    padding: 8px 20px 6px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-border:before,
+.btn-border:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.btn-border:before {
+    border-color: #c47135;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.btn-border:after {
+    border-bottom-width: 2px;
+    border-color: #c47135;
+    bottom: -5px;
+    right: 0px;
+}
+
+.btn-border:hover {
+    background-color: #c47135;
+}
+
+.btn-border:hover:before,
+.btn-border:hover:after {
+    height: 100%;
+    width: 100%;
 }
 
 /* MAIN ATAS */
@@ -57,11 +157,11 @@ header {
     min-height: 400px;
     background: #ffffff;
 }
-  
+
 .carousel .container-fluid {
     padding: 0;
 }
-  
+
 .carousel .carousel-item {
     position: relative;
     width: 100%;
@@ -71,7 +171,7 @@ header {
     justify-content: center;
     flex-direction: column;
 }
-  
+
 .carousel .carousel-img {
     position: relative;
     width: 100%;
@@ -79,7 +179,7 @@ header {
     text-align: right;
     overflow: hidden;
 }
-  
+
 .carousel .carousel-img::after {
     position: absolute;
     content: "";
@@ -90,13 +190,13 @@ header {
     background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
-  
+
 .carousel .carousel-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-  
+
 .carousel .carousel-text {
     position: absolute;
     max-width: 700px;
@@ -107,7 +207,7 @@ header {
     flex-direction: column;
     z-index: 2;
 }
-  
+
 .carousel .carousel-text h1 {
     text-align: center;
     color: #ffffff;
@@ -115,29 +215,29 @@ header {
     font-weight: 700;
     margin-bottom: 30px;
 }
-  
-  .carousel .carousel-text h1 span {
+
+.carousel .carousel-text h1 span {
     color: #fbaf32;
 }
-  
+
 .carousel .carousel-text p {
     color: #ffffff;
     text-align: center;
     font-size: 20px;
     margin-bottom: 35px;
-  }
-  
+}
+
 .carousel .carousel-btn .btn:last-child {
     margin-left: 10px;
     background: #719a0a;
     border-color: #719a0a;
 }
-  
+
 .carousel .carousel-btn .btn:last-child:hover {
     color: blue;
     background: transparent;
 }
-  
+
 .btn.custom-btn {
     padding: 12px 25px;
     font-family: 'Nunito', sans-serif;
@@ -149,18 +249,18 @@ header {
     border-radius: 5px;
     transition: .5s;
 }
-  
+
 .btn.custom-btn:hover {
     color: #fbaf32;
     background: transparent;
 }
-  
+
 .btn.custom-btn:focus,
-  .form-control:focus,
-  .custom-select:focus {
+.form-control:focus,
+.custom-select:focus {
     box-shadow: none;
-} 
-  
+}
+
 /* MAIN ATAS */
 
 /* Bagian Promo */
@@ -212,7 +312,7 @@ header {
     text-align: justify;
 }
 
-.menu p{
+.menu p {
     font-size: 16px;
     margin-top: 10px;
 }
@@ -226,7 +326,7 @@ header {
     border-radius: 10px;
 }
 
-.menu a{
+.menu a {
     display: block;
     margin-top: 20px;
     background-color: rgb(82, 36, 20);
@@ -240,6 +340,7 @@ header {
 .menu a:hover {
     background-color: rgba(82, 36, 20, 0.6);
 }
+
 /* end promo */
 
 /* Main center */
@@ -260,27 +361,27 @@ header {
     margin: 0 auto;
     font-family: "Lucida Grande";
 }
-  
+
 .lesson {
     float: left;
     width: 25%;
     /* margin-right: 10px; */
 }
-  
+
 .lesson-icon {
     position: relative;
 }
 
-.lesson-icon img{
+.lesson-icon img {
     object-fit: cover;
-    width:230px;
-    height:230px;
+    width: 230px;
+    height: 230px;
 }
 
 .borders {
     /* border-radius: 20px; */
     display: inline-block;
-    border: 1px  #454545;
+    border: 1px #454545;
     /* background: #F8F8FF; */
     /* padding: 20px;  */
     width: 285px;
@@ -289,7 +390,7 @@ header {
 }
 
 .borders h3 {
-    margin-top: -10px;  
+    margin-top: -10px;
 }
 
 .text-contents {
@@ -297,7 +398,7 @@ header {
     display: inline-block;
     margin-top: 2px;
     font-size: 18px;
-    color: 	#696969;
+    color: #696969;
     text-align: justify;
 }
 
@@ -307,13 +408,13 @@ header {
     margin-top: 2px;
     font-size: 18px;
     font-weight: bold;
-    color: 	#9ACD32;
+    color: #9ACD32;
 }
 
 .clear {
     clear: left;
 }
-  
+
 .btn {
     padding: 12px 24px;
     color: white;
@@ -328,25 +429,28 @@ header {
     border: 1px solid #000;
     color: #000;
 }
+
 .btn.btn-white:hover {
-      border: 1px solid #000;
-      background: #000;
-      color: #fff;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
 }
 
 .btn.btn-white.btn-outline-white {
-      border-color: #000;
-      background: none;
-      border-width: 1px;
-      color: #000; 
+    border-color: #000;
+    background: none;
+    border-width: 1px;
+    color: #000;
 }
 
-.btn.btn-white.btn-outline-white:hover, .btn.btn-white.btn-outline-white:focus, .btn.btn-white.btn-outline-white:active {
-        background: #9ACD32;
-        border-color: #9ACD32;
-        color: #000; 
+.btn.btn-white.btn-outline-white:hover,
+.btn.btn-white.btn-outline-white:focus,
+.btn.btn-white.btn-outline-white:active {
+    background: #9ACD32;
+    border-color: #9ACD32;
+    color: #000;
 }
-  
+
 .btn:hover {
     opacity: 1;
 }
@@ -357,19 +461,19 @@ header {
 
 
 footer {
-    background-color: darkslategray; 
-    color:rgb(241, 241, 241);
+    background-color: darkslategray;
+    color: rgb(241, 241, 241);
     height: 200px;
-    padding-top:40px;
-    padding-bottom:40px;
-    padding-left:40px;
-    padding-right:40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 
 .footer-logo {
-    font-size:32px;
-    float:left;
+    font-size: 32px;
+    float: left;
     padding-bottom: 50px;
 }
 
@@ -381,8 +485,8 @@ footer {
 }
 
 .section-title {
-    
-    padding-left: 20px;           
+
+    padding-left: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 
@@ -390,7 +494,7 @@ footer {
 
 .footer-list-alamat li {
     list-style: none;
-    
+
     padding-bottom: 5px;
 }
 
@@ -404,15 +508,16 @@ footer {
 }
 
 .section-title-2 {
-    padding-left: 20px;           
+    padding-left: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 
 }
+
 .footer-list-kontak li {
     list-style: none;
     padding-bottom: 5px;
-    
+
 }
 
 /* .sosial-media {
@@ -453,13 +558,12 @@ footer {
 }
 
 .section-list-menu {
-    padding-left: 20px;           
+    padding-left: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
 
-.footer-list-menu li  {
+.footer-list-menu li {
     list-style: none;
     padding-bottom: 5px;
 }
-
