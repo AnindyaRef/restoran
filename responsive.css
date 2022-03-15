@@ -1,5 +1,16 @@
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
+    
+ /* Main Atas */
+    .carousel .carousel-text h1  {
+      font-size: 70px;
+    }
+  
+    .carousel .carousel-tex p {
+      font-size: 25px;
+    }
+/* Main Atas */    
+    
     .lesson {
       width: 50%;
       margin-bottom: 50px;
@@ -20,6 +31,23 @@
   
   /* Untuk Smartphone */
   @media all and (max-width: 670px) {
+      
+/* Main Atas */ 
+     .carousel .carousel-text h1 {
+      font-size: 35px;
+      line-height: 32px;
+    }
+    
+    .carousel .carousel-text p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .btn {
+      margin-bottom: 10px; 
+    }
+/* Main Atas */      
+      
     .lesson {
       width: 100%;
     }
@@ -28,9 +56,7 @@
       text-align: center;
     }
     
-    .btn {
-      width: 100%;
-    }
+
 
     .btn.btn-white {
         background: #fff;
