@@ -168,45 +168,77 @@ header {
     text-align: center;
     background-color: #F0D290;
     width: 100%;
-    height: 120px;
-    font-family: cooper black;
+    height: 110px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #522414;
     padding-top: 15px;
-    padding-bottom: 55px;
-    margin: 20px 0;
+    padding-bottom: 435px;
+    margin: auto;
 }
 
 .promogan h2 {
-    font-size: 20px;
-    margin-bottom: auto;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .promogan h3 {
-    font-size: 15px;
-    margin-bottom: 25px;
+    font-size: 22px;
+    margin: 5px;
     font-style: normal;
 }
 
-input {
-    padding: 5px 10px;
-    width: 45%;
-    border-radius: 10px;
-    border-style: 0px solid black; 
-    margin-right: 10px;
+.promogan p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 
-.confirm {
-    cursor: pointer;
-    padding: 6px 20px;
-    background-color: #502314;
+.menu {
+    float: left;
+    text-align: justify;
+    margin: 20px 350px;
+}
+
+.choose-menu {
+    font-size: 16px;
+}
+
+.menuu {
+    font-size: small;
+    width: 285px;
+    height: 25px;
+    float: right;
+    text-align: justify;
+}
+
+.menu p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.menu input {
+    width: 625px;
+    height: 20px;
+    border: 1px solid #522414;
+    padding: 2.5px;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    color: #f3cda2;
+}
+
+.menu a{
+    display: block;
+    margin-top: 20px;
+    background-color: rgb(82, 36, 20);
+    padding: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
     transition: all 0.4s;
-    font-family: montserrat regular;
 }
 
-.confirm:hover {
-    background-color: rgba(80, 35, 20, 0.8);
+.menu a:hover {
+    background-color: rgba(82, 36, 20, 0.6);
 }
 /* end promo */
 

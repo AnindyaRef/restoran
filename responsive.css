@@ -27,9 +27,18 @@
     .lesson-icon img{
         width: 50%;
     }
+
+    /* Bagian Formnya Gan */
+    
+    .menu {
+      margin: 20px 155px;
+    }
+
+    /* Bagian Formnya Gan */
+
   }
-  
-  /* Untuk Smartphone */
+
+    /* Untuk Smartphone */
   @media all and (max-width: 670px) {
       
 /* Main Atas */ 
@@ -113,4 +122,29 @@
     .lesson-icon img{
         width: 50%;
     }
-  }
+
+  /*  Bagian Formnya Gan */
+    .promogan h2 {
+      font-size: 38px;
+    }
+
+    .promogan h3 {
+      font-size: 20px;
+    }
+
+    .promogan p {
+      font-size: 14px;
+    }
+  
+    .menu {
+      margin: 20px 95px;
+    }
+
+    .menuu {
+      width: 200px;
+    }
+
+    .menu input {
+      width: 425px;
+    }
+}
