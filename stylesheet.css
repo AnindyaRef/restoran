@@ -479,15 +479,33 @@ footer {
   color: rgb(241, 241, 241);
   height: auto;
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  float: left;
+  font-size: 20px;
+  padding-bottom: 5vh;
+}
+
+.footer-list-layanan {
+  /* background-color: #fbaf32; */
+  float: left;
+    width: 33%;
+  text-align: center;
 }
 
 /* footer list alamat  */
 .footer-list-alamat {
-  /* float: left; */
-  padding-right: 8%;
-  padding-left: 8%;
+  /* background-color: #719a0a; */
+  float: left;
+    width: 33%;
+}
+
+/* footer list kontak  */
+
+.footer-list-kontak {
+  /* background-color: #8b0000; */
+  float: left;
+    width: 33%;
 }
 
 .section-title {
@@ -505,13 +523,7 @@ footer {
 
 /* footer list alamat  */
 
-/* footer list kontak  */
 
-.footer-list-kontak {
-  /* float: left; */
-  padding-right: 8%;
-  padding-left: 8%;
-}
 
 .section-title-2 {
   padding-left: 20px;
@@ -543,13 +555,6 @@ footer {
 
 /* footer list layanan */
 
-.footer-list-layanan {
-  padding-left: 8%;
-  padding-right: 8%;
-
-  /* float: left; */
-}
-
 .section-title-layanan {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
@@ -560,11 +565,11 @@ footer {
   font-size: 20px;
 }
 
-.bebas {
+/* .bebas {
   margin-left: 10%;
   margin-right: 10%;
   display: flex;
-}
+} */
 
 /* .footer-list-layanan p {
  
