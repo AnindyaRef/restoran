@@ -12,35 +12,6 @@ header > div,
 header > div:last-child,
 .top-right {
   justify-content: flex-end;
-
-  @media all and (max-width: 1500px) {
-    footer {
-      width: 100%;
-    }
-
-    .footer-list-layanan {
-      width: 50%;
-    }
-
-    .footer-list-layanan p {
-      font-size: 15px;
-    }
-
-    .footer-list-kontak {
-      width: 50%;
-    }
-    .footer-list-kontak .footer-paragraf {
-      font-size: 15px;
-    }
-
-    .footer-list-alamat {
-      width: 50%;
-    }
-
-    .footer-list-alamat .footer-paragraf {
-      font-size: 15px;
-    }
-  }
 }
 /* untuk pc */
 @media all and (max-width: 1500px) {
@@ -150,6 +121,10 @@ header > div:last-child,
     margin-bottom: 10px;
   }
 
+  .btns {
+    width: 50%;
+  }
+
   /* Main Atas */
 
   .lesson {
@@ -160,31 +135,31 @@ header > div:last-child,
     text-align: center;
   }
 
-  .btn.btn-white {
+  .btns.btn-white {
     background: #fff;
-    border: 1px solid #000;
-    color: #000;
+    border: 1px solid white;
+    color: white;
   }
 
-  .btn.btn-white:hover {
-    border: 1px solid #000;
-    background: #000;
+  .btns.btn-white:hover {
+    border: 1px solid white;
+    background: white;
     color: #fff;
   }
 
-  .btn.btn-white.btn-outline-white {
-    border-color: #000;
+  .btns.btn-white.btn-outline-white {
+    border-color: white;
     background: none;
     border-width: 1px;
-    color: #000;
+    color: white;
   }
 
-  .btn.btn-white.btn-outline-white:hover,
-  .btn.btn-white.btn-outline-white:focus,
-  .btn.btn-white.btn-outline-white:active {
+  .btns.btn-white.btn-outline-white:hover,
+  .btns.btn-white.btn-outline-white:focus,
+  .btns.btn-white.btn-outline-white:active {
     background: #9acd32;
     border-color: #9acd32;
-    color: #000;
+    color: white;
   }
 
   .facebook {
@@ -261,7 +236,7 @@ header > div:last-child,
   /* bagian footer */
 
   footer {
-    width: 100%;
+		width: 100%;
   }
 
   .footer-list-layanan {

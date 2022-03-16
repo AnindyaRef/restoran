@@ -389,6 +389,10 @@ header + div {
   height: 230px;
 }
 
+.lesson-icon h3{
+    color: 	#F8F8FF;
+}
+
 .borders {
   /* border-radius: 20px; */
   display: inline-block;
@@ -409,7 +413,7 @@ header + div {
   display: inline-block;
   margin-top: 2px;
   font-size: 18px;
-  color: #696969;
+  color: 	#F8F8FF;
   text-align: justify;
 }
 
@@ -426,7 +430,7 @@ header + div {
   clear: left;
 }
 
-.btn {
+.btns {
   padding: 12px 24px;
   color: white;
   display: inline-block;
@@ -435,34 +439,34 @@ header + div {
   text-align: center;
 }
 
-.btn.btn-white {
+.btns.btn-white {
   background: #fff;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid white;
+  color: white;
 }
 
-.btn.btn-white:hover {
-  border: 1px solid #000;
-  background: #000;
+.btns.btn-white:hover {
+  border: 1px solid white;
+  background: white;
   color: #fff;
 }
 
-.btn.btn-white.btn-outline-white {
-  border-color: #000;
+.btns.btn-white.btn-outline-white {
+  border-color: white;
   background: none;
   border-width: 1px;
-  color: #000;
+  color: white;
 }
 
-.btn.btn-white.btn-outline-white:hover,
-.btn.btn-white.btn-outline-white:focus,
-.btn.btn-white.btn-outline-white:active {
+.btns.btn-white.btn-outline-white:hover,
+.btns.btn-white.btn-outline-white:focus,
+.btns.btn-white.btn-outline-white:active {
   background: #9acd32;
   border-color: #9acd32;
-  color: #000;
+  color: white;
 }
 
-.btn:hover {
+.btns:hover {
   opacity: 1;
 }
 
