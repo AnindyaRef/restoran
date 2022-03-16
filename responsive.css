@@ -12,10 +12,71 @@ header > div,
 header > div:last-child,
 .top-right {
   justify-content: flex-end;
+
+  @media all and (max-width: 1500px) {
+    footer {
+      width: 100%;
+    }
+
+    .footer-list-layanan {
+      width: 50%;
+    }
+
+    .footer-list-layanan p {
+      font-size: 15px;
+    }
+
+    .footer-list-kontak {
+      width: 50%;
+    }
+    .footer-list-kontak .footer-paragraf {
+      font-size: 15px;
+    }
+
+    .footer-list-alamat {
+      width: 50%;
+    }
+
+    .footer-list-alamat .footer-paragraf {
+      font-size: 15px;
+    }
+  }
+}
+/* untuk pc */
+@media all and (max-width: 1500px) {
+  /* footer  */
+  footer {
+    width: 100%;
+  }
+
+  .footer-list-layanan {
+    width: 50%;
+  }
+
+  .footer-list-layanan p {
+    font-size: 15px;
+  }
+
+  .footer-list-kontak {
+    width: 50%;
+  }
+  .footer-list-kontak .footer-paragraf {
+    font-size: 15px;
+  }
+
+  .footer-list-alamat {
+    width: 50%;
+  }
+
+  .footer-list-alamat .footer-paragraf {
+    font-size: 15px;
+  }
 }
 
+/* footer  */
+
 /* Untuk Tablet */
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1000px) {
   /* Header */
   .trigger.menu1 {
     display: block;
@@ -70,36 +131,6 @@ header > div:last-child,
   /* Bagian Formnya Gan */
 
   /* Bagian Formnya Gan */
-
-  /* Bagian Footer  */
-  footer {
-    width: 100%;
-  }
-
-  .footer-list-layanan {
-    width: 50%;
-  }
-
-  .footer-list-layanan p {
-    font-size: 15px;
-  }
-
-  .footer-list-kontak {
-    width: 50%;
-  }
-  .footer-list-kontak .footer-paragraf {
-    font-size: 15px;
-  }
-
-  .footer-list-alamat {
-    width: 50%;
-  }
-
-  .footer-list-alamat .footer-paragraf {
-    font-size: 15px;
-  }
-
-  /* Bagian Footer */
 }
 
 /* Untuk Smartphone */
